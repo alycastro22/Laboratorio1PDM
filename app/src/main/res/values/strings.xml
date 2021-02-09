@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PDM_2021_I_P1_LABORATORIO1</string>
+    <string name="bienvenido">Bienvenido %s</string>
+</resources>
