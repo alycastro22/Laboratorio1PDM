@@ -41,7 +41,14 @@ class TransferirActivity : AppCompatActivity() {
 
     fun realizarTranferencia(){
         if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
-            Toast.makeText(this, "Su transición fue exitosa",Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TransferirExitosoctivity::class.java)
+            intent.putExtra("nombre origen", txtNombre.text.toString())
+            intent.putExtra("cuenta origen", txtCuenta.text.toString())
+            intent.putExtra("monto", txtMonto.text.toString())
+            intent.putExtra("nombre destino", txtNombreDestino.text.toString())
+            intent.putExtra("cuenta destino", txtCuenta_destino.text.toString())
+            intent.putExtra("identidad", txtIdentidad.text.toString())
+            startActivity(intent)
         }else{
             tranferirDinero()
         }

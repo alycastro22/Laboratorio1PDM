@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/logo_banco"
-        android:layout_width="254dp"
+        android:layout_width="275dp"
         android:layout_height="0dp"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="224dp"
         android:contentDescription="@string/logo_tigo"
         app:layout_constraintBottom_toTopOf="@+id/txtNombreDestino"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,9 +35,9 @@
 
     <EditText
         android:id="@+id/txtNombre"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="244dp"
         android:autofillHints=""
         android:backgroundTint="#fff"
         android:ems="10"
@@ -48,7 +48,7 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,7 +83,7 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -109,7 +109,7 @@
         android:id="@+id/txtCuenta_destino"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="520dp"
         android:autofillHints=""
         android:backgroundTint="#fff"
         android:ems="10"
@@ -119,6 +119,7 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -136,23 +137,27 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtNombreDestino"
-        android:layout_width="249dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="378dp"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="85dp"
+        android:backgroundTint="#fff"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Ingrese nombre destino"
-        android:textColor="#fff"
+        android:text="Nombre destino"
+        android:textColor="#ffff"
         android:textColorHint="#fff"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_banco" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

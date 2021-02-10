@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PDM_2021_I_P1_LABORATORIO1">
-        <activity android:name=".TransferirActivity"></activity>
+        <activity android:name=".TransferirExitosoctivity"></activity>
+        <activity android:name=".TransferirActivity" />
         <activity android:name=".RetirarDineroActivity" />
         <activity android:name=".RecargaClaroActivity" />
         <activity android:name=".RecargaTigoActivity" />

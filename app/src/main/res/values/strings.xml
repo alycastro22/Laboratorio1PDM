@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Servicios App</string>
-    <string name="bienvenido">Bienvenido %s</string>
+    <string name="transferirET">Transferencia exitosa %s, con número de cuenta %s, envío la cantidad de %s Lempiras, a %s con número de identidad %s y número de cuenta %s</string>
     <string name="logo">Logo</string>
     <string name="btnEnee">ENEE</string>
     <string name="btnSanaa">SANAA</string>
@@ -18,8 +18,6 @@
     <string name="txtdestino">Ingrese cuenta destino</string>
     <string name="txtIdentidad">Identidad destinatario</string>
     <string name="txtdestinatario">Nombre del destinatario</string>
-
-
 
 
     <string name="txtTransferir">Tranferir</string>
