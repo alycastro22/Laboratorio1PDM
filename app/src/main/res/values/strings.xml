@@ -8,4 +8,14 @@
     <string name="btnClaro">CLARO</string>
     <string name="btnRetiro">RETIRAR</string>
     <string name="btnTransferir">TRANSFERIR</string>
+    <string name="logo_tigo">LOGO</string>
+    <string name="retroceder">RETROCESO</string>
+    <string name="numero">Ingrese su número</string>
+    <string name="monto">Ingrese el monto</string>
+    <string name="btnComprar">COMPRAR</string>
+    <string name="txtNombre">Ingrese su nombre</string>
+    <string name="txtCuenta">Ingrese su cuenta</string>
+    <string name="txtTransferir">Tranferir</string>
+
+
 </resources>

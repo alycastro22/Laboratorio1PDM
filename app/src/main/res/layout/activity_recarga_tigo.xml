@@ -7,4 +7,76 @@
     android:background="@drawable/fondo_tigo"
     tools:context=".RecargaTigoActivity">
 
+    <ImageView
+        android:id="@+id/logo_tigo"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/logo_tigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_tigo" />
+
+    <ImageView
+        android:id="@+id/retroceder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/retroceder"
+        android:onClick="menuPrincipal"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFF"
+        android:ems="10"
+        android:hint="@string/numero"
+        android:inputType="phone"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:autofillHints=""
+        android:backgroundTint="#FFF"
+        android:ems="10"
+        android:hint="@string/monto"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnComprar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_comprar"
+        android:fontFamily="@font/eb_garamond"
+        android:gravity="center"
+        android:text="@string/btnComprar"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
