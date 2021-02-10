@@ -5,15 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-
-
 class InicioAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_app)
-
-
     }
+
     fun abrirEnee(view: View) {
         val cambio = Intent(this, ComprarEneeActivity::class.java)
         startActivity(cambio)
