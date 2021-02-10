@@ -35,8 +35,8 @@
 
     <EditText
         android:id="@+id/txtNombre"
-        android:layout_width="258dp"
-        android:layout_height="56dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="244dp"
         android:autofillHints=""
         android:backgroundTint="#fff"
@@ -48,13 +48,12 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtCuenta"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="308dp"
         android:autofillHints=""
@@ -72,7 +71,7 @@
 
     <EditText
         android:id="@+id/txtMonto"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="376dp"
         android:autofillHints=""
@@ -107,7 +106,7 @@
 
     <EditText
         android:id="@+id/txtCuenta_destino"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="520dp"
         android:autofillHints=""
@@ -125,7 +124,7 @@
 
     <EditText
         android:id="@+id/txtIdentidad"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="580dp"
         android:autofillHints=""
@@ -143,15 +142,14 @@
 
     <EditText
         android:id="@+id/txtNombreDestino"
-        android:layout_width="240dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="455dp"
-        android:layout_marginEnd="85dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:autofillHints=""
         android:backgroundTint="#fff"
         android:ems="10"
+        android:hint="@string/txtdestinatario"
         android:inputType="textPersonName"
-        android:text="Nombre destino"
         android:textColor="#ffff"
         android:textColorHint="#fff"
         android:textSize="24sp"

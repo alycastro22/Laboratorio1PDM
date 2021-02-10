@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:backgroundTint="@color/black"
+    android:background="@drawable/fondo_banco"
     tools:context=".TransferirExitosoctivity">
 
 
@@ -27,10 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="391dp"
-        android:text="Tranferencia exitosa"
+        android:text="¡Tranferencia exitosa!"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

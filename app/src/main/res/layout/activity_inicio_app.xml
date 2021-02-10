@@ -8,13 +8,6 @@
     tools:context=".InicioAppActivity"
     android:background="@drawable/fondo_principal">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/fondo_principal"
-        android:orientation="vertical"
-        tools:context=".InicioAppActivity">
-
         <TextView
             android:id="@+id/btnTransferir"
             android:layout_width="320dp"
@@ -125,6 +118,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnClaro" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,132 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_enee"
-    tools:context=".ComprarEneeActivity">
+    tools:context=".ComprarSanaaActivity">
+
+    <ImageView
+        android:id="@+id/retroceder4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/retroceder"
+        android:onClick="menuPrincipal"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/txtCodigo"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtNombre"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtDireccion"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCliente"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/txtFecha"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/txtTotal"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFecha"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txtEnviar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btn_enee"
+        android:fontFamily="@font/eb_garamond"
+        android:gravity="center"
+        android:text="@string/txtEnviar"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+    <ImageView
+        android:id="@+id/logoEnee"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo_tigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_enee" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

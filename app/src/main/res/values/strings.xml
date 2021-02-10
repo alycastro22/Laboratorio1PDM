@@ -18,9 +18,15 @@
     <string name="txtdestino">Ingrese cuenta destino</string>
     <string name="txtIdentidad">Identidad destinatario</string>
     <string name="txtdestinatario">Nombre del destinatario</string>
-
-
     <string name="txtTransferir">Tranferir</string>
-
-
+    <string name="txtCodigo">Ingrese su código</string>
+    <string name="txtDireccion">Ingrese su dirección</string>
+    <string name="txtFecha">Ingrese la fecha </string>
+    <string name="txtTotal">Ingrese el total a pagar</string>
+    <string name="txtEnviar">ENVIAR</string>
+    <string name="txtRetirarDinero">Retirar</string>
+    <string name="txtCuenta1">Ingrese su cuenta </string>
+    <string name="txtMonto2">Ingrese el monto </string>+
+    <string name="txtRetirar">RETIRAR</string>
+    <string name="todo"></string>
 </resources>

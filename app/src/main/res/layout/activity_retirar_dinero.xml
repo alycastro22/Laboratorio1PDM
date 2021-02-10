@@ -7,4 +7,80 @@
     android:background="@drawable/fondo_banco"
     tools:context=".RetirarDineroActivity">
 
+    <EditText
+        android:id="@+id/txtCuenta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/txtCuenta1"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/retroceder5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        android:onClick="menuPrincipal"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retroceder" />
+
+    <EditText
+        android:id="@+id/txtMonto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/txtMonto2"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuenta1" />
+
+    <TextView
+        android:id="@+id/txtEnviar1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_enviar1"
+        android:fontFamily="@font/eb_garamond"
+        android:gravity="center"
+        android:text="@string/txtRetirar"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoRetirar"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/logo_tigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_retirar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
