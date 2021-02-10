@@ -20,24 +20,27 @@ class TransferirActivity : AppCompatActivity() {
     }
     fun tranferirDinero(){
         if (txtCuenta.text.isEmpty()){
-            Toast.makeText(this, "Debe ingresar una cuenta de origen", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Debe ingresar una cuenta la persona de origen", Toast.LENGTH_LONG).show()
         }
         if(txtNombre.text.isEmpty()){
-            Toast.makeText(this, "Debe ingresar un nombre de origen", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Debe ingresar un nombre de la persona de origen", Toast.LENGTH_SHORT).show()
         }
         if(txtMonto.text.isEmpty()){
             Toast.makeText(this,"Debe ingresar una cantidad de dinero",Toast.LENGTH_LONG).show()
         }
+        if (txtNombreDestino.text.isEmpty()){
+            Toast.makeText(this,"Debe ingresar el nombre de la persona de destino",Toast.LENGTH_LONG).show()
+        }
         if(txtCuenta_destino.text.isEmpty()){
-            Toast.makeText(this,"Debe ingresar una cuenta de destino", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Debe ingresar una cuenta de la persona destino", Toast.LENGTH_LONG).show()
         }
         if(txtIdentidad.text.isEmpty()){
-            Toast.makeText(this, "Debe ingresar la identidad de destino", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Debe ingresar la identidad de la persona de destino", Toast.LENGTH_LONG).show()
         }
     }
 
     fun realizarTranferencia(){
-        if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
+        if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
             Toast.makeText(this, "Su transición fue exitosa",Toast.LENGTH_SHORT).show()
         }else{
             tranferirDinero()
