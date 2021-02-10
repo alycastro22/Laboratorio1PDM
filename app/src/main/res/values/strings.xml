@@ -13,8 +13,15 @@
     <string name="numero">Ingrese su número</string>
     <string name="monto">Ingrese el monto</string>
     <string name="btnComprar">COMPRAR</string>
-    <string name="txtNombre">Ingrese su nombre</string>
-    <string name="txtCuenta">Ingrese su cuenta</string>
+    <string name="txtNombre">Ingrese nombre origen</string>
+    <string name="txtCuenta">Ingrese cuenta origen</string>
+    <string name="txtdestino">Ingrese cuenta destino</string>
+    <string name="txtIdentidad">Identidad destinatario</string>
+    <string name="txtdestinatario">Nombre del destinatario</string>
+
+
+
+
     <string name="txtTransferir">Tranferir</string>
 
 

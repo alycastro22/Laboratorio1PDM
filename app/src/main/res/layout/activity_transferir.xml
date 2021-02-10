@@ -11,7 +11,7 @@
         android:id="@+id/logo_banco"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/logo_tigo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,8 @@
         android:id="@+id/txtNombre"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="280dp"
+        android:autofillHints=""
         android:backgroundTint="#fff"
         android:ems="10"
         android:fontFamily="sans-serif"
@@ -46,14 +47,13 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtCuenta"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="360dp"
         android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -71,7 +71,8 @@
         android:id="@+id/txtMonto"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="430dp"
+        android:autofillHints=""
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/monto"
@@ -80,14 +81,14 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtTransferir"
         android:layout_width="250dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/btntransferir"
         android:fontFamily="@font/eb_garamond"
         android:gravity="center"
@@ -97,6 +98,41 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdentidad" />
+
+    <EditText
+        android:id="@+id/txtCuenta_destino"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/txtdestino"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIdentidad"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="@string/txtIdentidad"
+        android:inputType="number"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
