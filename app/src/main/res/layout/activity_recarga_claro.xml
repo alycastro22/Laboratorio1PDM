@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecargaClaroActivity">
+    tools:context=".RecargaClaroActivity"
+    android:background="@drawable/fondo_claro">
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

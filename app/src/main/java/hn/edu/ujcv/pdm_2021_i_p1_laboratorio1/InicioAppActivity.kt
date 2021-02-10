@@ -10,9 +10,9 @@ class InicioAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio_app)
-        getNombre()
+        //getNombre()
     }
-    fun getNombre(){
+    /**fun getNombre(){
         val bundle = intent.extras
         val nombre = bundle?.get("nombre")
         txtvSaludar.text = getString(R.string.bienvenido, nombre)
@@ -25,7 +25,7 @@ class InicioAppActivity : AppCompatActivity() {
         val intent = Intent(this, ComprarEneeActivity::class.java)
         startActivity(intent)
     }
-    private fun compraS(){}
+    private fun compraS(){}**/
 
 
 }

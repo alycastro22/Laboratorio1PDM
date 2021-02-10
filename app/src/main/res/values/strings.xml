@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">PDM_2021_I_P1_LABORATORIO1</string>
+    <string name="app_name">Servicios App</string>
     <string name="bienvenido">Bienvenido %s</string>
+    <string name="logo">Logo</string>
+    <string name="btnEnee">ENEE</string>
+    <string name="btnSanaa">SANAA</string>
+    <string name="btnTigo">TIGO</string>
+    <string name="btnClaro">CLARO</string>
+    <string name="btnRetiro">RETIRAR</string>
+    <string name="btnTransferir">TRANSFERIR</string>
 </resources>
