@@ -15,8 +15,7 @@
         <activity android:name=".RecargaTigoActivity" />
         <activity android:name=".ComprarSanaaActivity" />
         <activity android:name=".ComprarEneeActivity" />
-        <activity android:name=".InicioAppActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".InicioAppActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
