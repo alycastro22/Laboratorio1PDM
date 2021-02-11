@@ -46,7 +46,7 @@ class RecargaClaroActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar recarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                val intent = Intent(this, TransferirExitosoctivity::class.java)
+                val intent = Intent(this, RecargoClaroExitosoActivity::class.java)
                 intent.putExtra("tipo", txtTipoC.text.toString())
                 intent.putExtra("numero", txtNumero1.text.toString())
                 intent.putExtra("monto", txtMonto1.text.toString())
@@ -62,7 +62,7 @@ class RecargaClaroActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar SuperRecarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                val intent = Intent(this, TransferirExitosoctivity::class.java)
+                val intent = Intent(this, RecargoClaroExitosoActivity::class.java)
                 intent.putExtra("tipo", txtTipoC.text.toString())
                 intent.putExtra("numero", txtNumero1.text.toString())
                 intent.putExtra("monto", txtMonto1.text.toString())

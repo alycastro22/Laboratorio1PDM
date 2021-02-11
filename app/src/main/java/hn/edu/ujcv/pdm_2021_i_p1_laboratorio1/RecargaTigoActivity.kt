@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_recarga_claro.*
 import kotlinx.android.synthetic.main.activity_recarga_tigo.*
 
 class RecargaTigoActivity : AppCompatActivity() {
@@ -15,7 +16,6 @@ class RecargaTigoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recarga_tigo)
         btnComprar.setOnClickListener() {
             Comprar()
-
         }
 
     }
@@ -25,7 +25,6 @@ class RecargaTigoActivity : AppCompatActivity() {
         startActivity(volverMenu)
 
     }
-
 
     fun Comprar() {
 
@@ -48,7 +47,11 @@ class RecargaTigoActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar recarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                Toast.makeText(this, "Recarga enviada exitosamente", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, RecargaTigoExitosaActivity::class.java)
+                intent.putExtra("tipo", txtTipo.text.toString())
+                intent.putExtra("numero", Txtnumero.text.toString())
+                intent.putExtra("monto", txtmonto.text.toString())
+                startActivity(intent)
 
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
@@ -61,7 +64,11 @@ class RecargaTigoActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar SuperRecarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                Toast.makeText(this, "SuperRecarga enviada exitosamente", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, RecargaTigoExitosaActivity::class.java)
+                intent.putExtra("tipo", txtTipo.text.toString())
+                intent.putExtra("numero", Txtnumero.text.toString())
+                intent.putExtra("monto", txtmonto.text.toString())
+                startActivity(intent)
 
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })

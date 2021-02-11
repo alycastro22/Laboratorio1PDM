@@ -30,7 +30,7 @@
     <string name="txtMonto2">Ingrese el monto </string>
     <string name="txtRetirar">RETIRAR</string>
     <string name="pagoExitoso">Pago exitoso, %S con codigo %S, direccion %s, pago el total %s en Lempiras, la fecha de %S.</string>
-    <string name="Recarga">REnvio exitoso de %S al numero %s por el valor de %s</string>
+    <string name="Recarga">Envió exitoso de %S al numero %s por el valor de %s</string>
     <string name="todo"></string>
 
 </resources>
