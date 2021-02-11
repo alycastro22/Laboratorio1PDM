@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompraSAExitosaActivity"
-    android:background="@drawable/fondo_sanaa">
+    android:background="@drawable/fondo_sanaa"
+    tools:context=".CompraSAExitosaActivity">
 
     <ImageView
         android:id="@+id/retroceder2"
@@ -32,5 +32,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="185dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="113dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_sanaa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

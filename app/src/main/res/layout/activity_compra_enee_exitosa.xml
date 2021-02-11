@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompraEneeExitosaActivity"
-    android:background="@drawable/fondo_enee">
+    android:background="@drawable/fondo_enee"
+    tools:context=".CompraEneeExitosaActivity">
 
     <ImageView
         android:id="@+id/retroceder2"
@@ -32,5 +32,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="297dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_enee" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
