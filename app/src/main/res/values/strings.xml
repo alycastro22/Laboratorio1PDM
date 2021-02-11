@@ -31,6 +31,7 @@
     <string name="txtRetirar">RETIRAR</string>
     <string name="pagoExitoso">Pago exitoso, %S con codigo %S, direccion %s, pago el total %s en Lempiras, la fecha de %S.</string>
     <string name="Recarga">Envió exitoso de %S al numero %s por el valor de %s</string>
+    <string name="Retiro">Retiro exitoso de Lps.  %S de la cuenta: %s</string>
     <string name="todo"></string>
 
 </resources>

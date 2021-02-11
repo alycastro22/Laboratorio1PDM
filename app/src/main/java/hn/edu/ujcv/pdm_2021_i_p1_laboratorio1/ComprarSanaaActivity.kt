@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_comprar_enee.*
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.*
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtClienteSa
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtCodigoEN
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtDireccionSA
+import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtEnviar
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtFechaSA
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtTotalSA
 
@@ -41,7 +43,7 @@ class ComprarSanaaActivity : AppCompatActivity() {
         }
     }
     fun realizarPagoSANAA(){
-        if(txtCodigoEN.text.isNotEmpty() && txtClienteSa.text.isNotEmpty() && txtDireccionSA.text.isNotEmpty() && txtFechaSA.text.isNotEmpty() && txtTotalSA.text.isNotEmpty()){
+        if(txtCodigoEN.text.isNotEmpty() && txtClienteSa.text.isNotEmpty() && txtDireccionSA.text.isNotEmpty() && txtFechaSA.text.isNotEmpty() && txtTotalSA.text.isNotEmpty() && txtTotalSA.text.toString().toDouble()>0){
             val intent = Intent(this, CompraSAExitosaActivity::class.java)
             intent.putExtra("codigo", txtCodigoEN.text.toString())
             intent.putExtra("cliente", txtClienteSa.text.toString())

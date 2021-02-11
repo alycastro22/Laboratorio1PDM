@@ -37,7 +37,7 @@ class  ComprarEneeActivity : AppCompatActivity() {
         }
     }
     fun realizarpago(){
-        if (txtCodigoEN.text.isNotEmpty() && txtClienteSa.text.isNotEmpty() && txtDireccionSA.text.isNotEmpty() && txtFecha.text.isNotEmpty() && txtTotalSA.text.isNotEmpty()){
+        if (txtCodigoEN.text.isNotEmpty() && txtClienteSa.text.isNotEmpty() && txtDireccionSA.text.isNotEmpty() && txtFecha.text.isNotEmpty() && txtTotalSA.text.isNotEmpty()  && txtTotalSA.text.toString().toDouble()>0){
             val intent = Intent(this, CompraEneeExitosaActivity::class.java)
             intent.putExtra("codigo", txtCodigoEN.text.toString())
             intent.putExtra("cliente", txtClienteSa.text.toString())

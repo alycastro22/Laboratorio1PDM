@@ -32,14 +32,14 @@ class RecargaTigoActivity : AppCompatActivity() {
             Toast.makeText(this, "Debe Ingresar un número", Toast.LENGTH_SHORT).show()
         }
         else if (txtmonto.text.isEmpty()) {
-            Toast.makeText(this, "Debe Ingresar un monto", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Debe Ingresar un monto 10, 25, 50, 100", Toast.LENGTH_SHORT).show()
 
         }
         else if (txtTipo.text.toString().isEmpty()) {
             Toast.makeText(this, "Elegir 'Recarga' o 'SuperRecarga'", Toast.LENGTH_SHORT).show()
         }
 
-        if (txtTipo.text.toString() == "Recarga" && Txtnumero.text.isNotEmpty() && txtmonto.text.isNotEmpty()) {
+        if (txtTipo.text.toString() == "Recarga" && Txtnumero.text.isNotEmpty() && txtmonto.text.isNotEmpty()  && txtmonto.text.toString().toDouble()>9) {
             val numero = Txtnumero.text
             val monto = txtmonto.text
 
@@ -56,7 +56,7 @@ class RecargaTigoActivity : AppCompatActivity() {
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
-        } else if (txtTipo.text.toString() == "SuperRecarga" && Txtnumero.text.isNotEmpty() && txtmonto.text.isNotEmpty() ) {
+        } else if (txtTipo.text.toString() == "SuperRecarga" && Txtnumero.text.isNotEmpty() && txtmonto.text.isNotEmpty() && txtmonto.text.toString().toDouble()>9 ) {
             val numero = Txtnumero.text
             val monto = txtmonto.text
 

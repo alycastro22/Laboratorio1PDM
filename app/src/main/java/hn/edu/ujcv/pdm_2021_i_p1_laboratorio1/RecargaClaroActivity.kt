@@ -31,14 +31,14 @@ class RecargaClaroActivity : AppCompatActivity() {
             Toast.makeText(this, "Debe Ingresar un número", Toast.LENGTH_SHORT).show()
         }
         else if (txtMonto1.text.isEmpty()) {
-            Toast.makeText(this, "Debe Ingresar un monto", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Debe Ingresar un monto 10, 25, 50, 100", Toast.LENGTH_SHORT).show()
 
         }
         else if (txtTipoC.text.toString().isEmpty()) {
             Toast.makeText(this, "Elegir 'Recarga' o 'SuperRecarga'", Toast.LENGTH_SHORT).show()
         }
 
-        else if (txtTipoC.text.toString() == "Recarga" && txtNumero1.text.isNotEmpty() && txtMonto1.text.isNotEmpty()) {
+        else if (txtTipoC.text.toString() == "Recarga" && txtNumero1.text.isNotEmpty() && txtMonto1.text.isNotEmpty() && txtMonto1.text.toString().toDouble()>9) {
             val numero = txtNumero1.text
             val monto = txtMonto1.text
 
@@ -54,7 +54,7 @@ class RecargaClaroActivity : AppCompatActivity() {
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
-        } else if (txtTipoC.text.toString() == "SuperRecarga" && txtNumero1.text.isNotEmpty() && txtMonto1.text.isNotEmpty() ) {
+        } else if (txtTipoC.text.toString() == "SuperRecarga" && txtNumero1.text.isNotEmpty() && txtMonto1.text.isNotEmpty() && txtMonto1.text.toString().toDouble()>9 ) {
             val numero = txtNumero1.text
             val monto = txtMonto1.text
 

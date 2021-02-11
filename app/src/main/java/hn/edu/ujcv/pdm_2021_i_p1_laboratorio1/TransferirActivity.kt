@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_recarga_tigo.*
 import kotlinx.android.synthetic.main.activity_transferir.*
 
 class TransferirActivity : AppCompatActivity() {
@@ -39,7 +40,7 @@ class TransferirActivity : AppCompatActivity() {
     }
 
     fun realizarTranferencia(){
-        if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
+        if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()  && txtMonto.text.toString().toDouble()>0){
             val intent = Intent(this, TransferirExitosoctivity::class.java)
             intent.putExtra("nombre origen", txtNombre.text.toString())
             intent.putExtra("cuenta origen", txtCuenta.text.toString())
