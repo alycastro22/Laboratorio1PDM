@@ -11,9 +11,10 @@
         android:id="@+id/logo_tigo"
         android:layout_width="250dp"
         android:layout_height="180dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="88dp"
         android:contentDescription="@string/logo_tigo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_tigo" />
@@ -32,10 +33,10 @@
         app:srcCompat="@drawable/retroceder" />
 
     <EditText
-        android:id="@+id/numero"
+        android:id="@+id/Txtnumero"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="320dp"
         android:autofillHints=""
         android:backgroundTint="#FFF"
         android:ems="10"
@@ -48,11 +49,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+
     <EditText
-        android:id="@+id/monto"
+        android:id="@+id/txtmonto"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="480dp"
         android:autofillHints=""
         android:backgroundTint="#FFF"
         android:ems="10"
@@ -62,6 +66,25 @@
         android:textColorHint="#fff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTipo"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="400dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/txtTipo"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,4 +102,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

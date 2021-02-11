@@ -23,6 +23,7 @@
     <string name="txtDireccion">Ingrese su dirección</string>
     <string name="txtFecha">Ingrese la fecha </string>
     <string name="txtTotal">Ingrese el total a pagar</string>
+    <string name="txtTipo">Recarga/SuperRecarga</string>
     <string name="txtEnviar">ENVIAR</string>
     <string name="txtRetirarDinero">Retirar</string>
     <string name="txtCuenta1">Ingrese su cuenta </string>

@@ -38,7 +38,7 @@
         android:id="@+id/txtNumero1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="300dp"
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/numero"
@@ -51,10 +51,29 @@
         android:autofillHints="" />
 
     <EditText
+        android:id="@+id/txtTipoC"
+        android:layout_width="258dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="400dp"
+        android:autofillHints=""
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/txtTipo"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/txtMonto1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="480dp"
         android:backgroundTint="#fff"
         android:ems="10"
         android:hint="@string/monto"

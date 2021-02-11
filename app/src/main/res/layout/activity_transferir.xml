@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtTipo"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="244dp"
