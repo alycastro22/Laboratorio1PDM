@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_comprar_enee.*
-import kotlinx.android.synthetic.main.activity_comprar_sanaa.*
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtClienteSa
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtCodigoEN
 import kotlinx.android.synthetic.main.activity_comprar_sanaa.txtDireccionSA

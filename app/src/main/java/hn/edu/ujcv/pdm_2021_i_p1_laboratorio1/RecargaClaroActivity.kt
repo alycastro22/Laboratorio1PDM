@@ -51,6 +51,7 @@ class RecargaClaroActivity : AppCompatActivity() {
                 intent.putExtra("numero", txtNumero1.text.toString())
                 intent.putExtra("monto", txtMonto1.text.toString())
                 startActivity(intent)
+                limpiarCampos()
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
@@ -67,6 +68,7 @@ class RecargaClaroActivity : AppCompatActivity() {
                 intent.putExtra("numero", txtNumero1.text.toString())
                 intent.putExtra("monto", txtMonto1.text.toString())
                 startActivity(intent)
+                limpiarCampos()
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
@@ -77,5 +79,10 @@ class RecargaClaroActivity : AppCompatActivity() {
         }
 
 
+    }
+    fun limpiarCampos(){
+        txtTipoC.text.clear()
+        txtNumero1.text.clear()
+        txtMonto1.text.clear()
     }
 }

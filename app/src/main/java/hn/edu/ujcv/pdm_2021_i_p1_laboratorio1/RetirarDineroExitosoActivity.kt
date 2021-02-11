@@ -15,7 +15,7 @@ class RetirarDineroExitosoActivity : AppCompatActivity() {
 
     }
     fun menuPrincipal(view: View) {
-        val volverMenu = Intent(this, RecargaTigoActivity::class.java)
+        val volverMenu = Intent(this, RetirarDineroActivity::class.java)
         startActivity(volverMenu)
     }
 

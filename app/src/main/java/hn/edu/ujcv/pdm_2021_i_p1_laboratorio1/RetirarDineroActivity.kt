@@ -43,7 +43,7 @@ class RetirarDineroActivity : AppCompatActivity() {
                 intent.putExtra("cuenta", txtCuenta1.text.toString())
                 intent.putExtra("monto", txtMonto2.text.toString())
                 startActivity(intent)
-
+                limpiarcampo()
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
@@ -51,5 +51,9 @@ class RetirarDineroActivity : AppCompatActivity() {
         else{
             Toast.makeText(this, "Ingrese Cantidad entre 1 y 5000", Toast.LENGTH_SHORT).show()
         }
+    }
+    fun limpiarcampo(){
+        txtCuenta1.text.clear()
+        txtMonto2.text.clear()
     }
 }

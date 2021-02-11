@@ -52,6 +52,7 @@ class RecargaTigoActivity : AppCompatActivity() {
                 intent.putExtra("numero", Txtnumero.text.toString())
                 intent.putExtra("monto", txtmonto.text.toString())
                 startActivity(intent)
+                limpiarCampos()
 
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
@@ -69,7 +70,7 @@ class RecargaTigoActivity : AppCompatActivity() {
                 intent.putExtra("numero", Txtnumero.text.toString())
                 intent.putExtra("monto", txtmonto.text.toString())
                 startActivity(intent)
-
+                limpiarCampos()
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
@@ -81,5 +82,11 @@ class RecargaTigoActivity : AppCompatActivity() {
 
 
     }
+    fun limpiarCampos(){
+        txtTipo.text.clear()
+        Txtnumero.text.clear()
+        txtmonto.text.clear()
+    }
+
 
 }
