@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_compra_enee_exitosa.*
+import kotlinx.android.synthetic.main.activity_compra_s_a_exitosa.*
 
 class CompraSAExitosaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class CompraSAExitosaActivity : AppCompatActivity() {
         val direccion = bundle?.get("direccion")
         val fecha = bundle?.get("fecha")
         val total = bundle?.get("total")
-        txtcompraenne.text = getString(R.string.pagoExitoso, nombre, codigo,direccion, total, fecha)
+        txtcomprasanna.text = getString(R.string.pagoExitoso, nombre, codigo,direccion, total, fecha)
     }
 
 }
