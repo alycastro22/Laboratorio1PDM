@@ -21,7 +21,7 @@ class TransferirActivity : AppCompatActivity() {
         if (txtCuenta.text.isEmpty()){
             Toast.makeText(this, "Debe ingresar una cuenta la persona de origen", Toast.LENGTH_LONG).show()
         }
-        if(txtTipo.text.isEmpty()){
+        if(txtNombre.text.isEmpty()){
             Toast.makeText(this, "Debe ingresar un nombre de la persona de origen", Toast.LENGTH_SHORT).show()
         }
         if(txtMonto.text.isEmpty()){
@@ -39,9 +39,9 @@ class TransferirActivity : AppCompatActivity() {
     }
 
     fun realizarTranferencia(){
-        if (txtCuenta.text.isNotEmpty() && txtTipo.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
+        if (txtCuenta.text.isNotEmpty() && txtNombre.text.isNotEmpty() && txtMonto.text.isNotEmpty() && txtNombreDestino.text.isNotEmpty() && txtCuenta_destino.text.isNotEmpty() && txtIdentidad.text.isNotEmpty()){
             val intent = Intent(this, TransferirExitosoctivity::class.java)
-            intent.putExtra("nombre origen", txtTipo.text.toString())
+            intent.putExtra("nombre origen", txtNombre.text.toString())
             intent.putExtra("cuenta origen", txtCuenta.text.toString())
             intent.putExtra("monto", txtMonto.text.toString())
             intent.putExtra("nombre destino", txtNombreDestino.text.toString())

@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_recarga_claro.*
-import kotlinx.android.synthetic.main.activity_recarga_tigo.*
 
 class RecargaClaroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,8 +46,11 @@ class RecargaClaroActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar recarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                Toast.makeText(this, "Recarga enviada exitosamente", Toast.LENGTH_SHORT).show()
-
+                val intent = Intent(this, TransferirExitosoctivity::class.java)
+                intent.putExtra("tipo", txtTipoC.text.toString())
+                intent.putExtra("numero", txtNumero1.text.toString())
+                intent.putExtra("monto", txtMonto1.text.toString())
+                startActivity(intent)
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
@@ -60,8 +62,11 @@ class RecargaClaroActivity : AppCompatActivity() {
             builder.setTitle("Confirmación Recarga")
             builder.setMessage("¿Desea enviar SuperRecarga de Lps: " + monto + "Al número: " + numero + "?")
             builder.setPositiveButton("Confirmar", { dialogInterface: DialogInterface, i: Int ->
-                Toast.makeText(this, "SuperRecarga enviada exitosamente", Toast.LENGTH_SHORT).show()
-
+                val intent = Intent(this, TransferirExitosoctivity::class.java)
+                intent.putExtra("tipo", txtTipoC.text.toString())
+                intent.putExtra("numero", txtNumero1.text.toString())
+                intent.putExtra("monto", txtMonto1.text.toString())
+                startActivity(intent)
             })
             builder.setNegativeButton("Cancelar", { dialogInterface: DialogInterface, i: Int -> })
             builder.show()
