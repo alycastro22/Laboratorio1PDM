@@ -14,7 +14,7 @@ class TransferirExitosoctivity : AppCompatActivity() {
     }
 
     fun menuPrincipal(view: View) {
-        val volverMenu = Intent(this, InicioAppActivity::class.java)
+        val volverMenu = Intent(this, TransferirActivity::class.java)
         startActivity(volverMenu)
     }
     fun getNombre(){

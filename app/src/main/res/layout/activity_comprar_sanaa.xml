@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <EditText
-        android:id="@+id/txtCodigo"
+        android:id="@+id/txtCodigoEN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
@@ -38,7 +38,7 @@
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/txtCliente"
+        android:id="@+id/txtClienteSa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -51,11 +51,11 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoEN"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/txtDireccion"
+        android:id="@+id/txtDireccionSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -68,11 +68,11 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCliente"
+        app:layout_constraintTop_toBottomOf="@+id/txtClienteSa"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/txtFecha"
+        android:id="@+id/txtFechaSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -85,11 +85,11 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccionSA"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/txtTotal"
+        android:id="@+id/txtTotalSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -102,7 +102,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFecha"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaSA"
         android:autofillHints="" />
 
     <TextView
@@ -120,7 +120,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalSA" />
 
     <ImageView
         android:id="@+id/logoSanaa"
