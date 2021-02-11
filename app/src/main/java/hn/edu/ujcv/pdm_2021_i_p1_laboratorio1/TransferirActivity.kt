@@ -48,9 +48,18 @@ class TransferirActivity : AppCompatActivity() {
             intent.putExtra("cuenta destino", txtCuenta_destino.text.toString())
             intent.putExtra("identidad", txtIdentidad.text.toString())
             startActivity(intent)
+            limpiarCampos()
         }else{
             tranferirDinero()
         }
+    }
+    fun limpiarCampos(){
+        txtCuenta.text.clear()
+        txtNombre.text.clear()
+        txtCuenta_destino.text.clear()
+        txtMonto.text.clear()
+        txtNombreDestino.text.clear()
+        txtIdentidad.text.clear()
     }
 
 

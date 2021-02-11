@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_enee"
-    tools:context=".ComprarSanaaActivity">
+    tools:context=".ComprarEneeActivity">
 
     <ImageView
         android:id="@+id/retroceder4"
@@ -21,10 +21,11 @@
         app:srcCompat="@drawable/retroceder" />
 
     <EditText
-        android:id="@+id/txtCodigo"
+        android:id="@+id/txtCodigoEN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
+        android:autofillHints=""
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/txtCodigo"
@@ -34,14 +35,14 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtCliente"
+        android:id="@+id/txtClienteSa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/txtNombre"
@@ -51,14 +52,14 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCodigo"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoEN" />
 
     <EditText
-        android:id="@+id/txtDireccion"
+        android:id="@+id/txtDireccionSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/txtDireccion"
@@ -68,42 +69,42 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCliente"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClienteSa" />
 
     <EditText
         android:id="@+id/txtFecha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="491dp"
+        android:layout_marginEnd="66dp"
         android:backgroundTint="@color/white"
         android:ems="10"
+        android:autofillHints=""
         android:hint="@string/txtFecha"
         android:inputType="date"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccion"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtTotal"
+        android:id="@+id/txtTotalSA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="572dp"
+        android:autofillHints=""
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/txtTotal"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFecha"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtEnviar"
@@ -120,7 +121,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalSA" />
 
     <ImageView
         android:id="@+id/logoEnee"
@@ -132,5 +133,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_enee" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

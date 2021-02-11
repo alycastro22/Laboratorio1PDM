@@ -13,7 +13,7 @@
     <string name="numero">Ingrese su número</string>
     <string name="monto">Ingrese el monto</string>
     <string name="btnComprar">COMPRAR</string>
-    <string name="txtNombre">Ingrese nombre origen</string>
+    <string name="txtNombre">Ingrese nombre </string>
     <string name="txtCuenta">Ingrese cuenta origen</string>
     <string name="txtdestino">Ingrese cuenta destino</string>
     <string name="txtIdentidad">Identidad destinatario</string>
@@ -27,7 +27,9 @@
     <string name="txtEnviar">ENVIAR</string>
     <string name="txtRetirarDinero">Retirar</string>
     <string name="txtCuenta1">Ingrese su cuenta </string>
-    <string name="txtMonto2">Ingrese el monto </string>+
+    <string name="txtMonto2">Ingrese el monto </string>
     <string name="txtRetirar">RETIRAR</string>
+    <string name="pagoExitoso">Pago exitoso, %S con codigo %S, direccion %s, pago el total %s en Lempiras, la fecha de %S.</string>
     <string name="todo"></string>
+
 </resources>
